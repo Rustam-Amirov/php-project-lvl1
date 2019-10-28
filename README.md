@@ -5,6 +5,7 @@
 
 You also can install this package via composer.
 
-<a href="https://asciinema.org/a/d2al4s6UNZ5YLbs892HIqUdec??autoplay=1"><img src="https://asciinema.org/a/d2al4s6UNZ5YLbs892HIqUdec.png" width="700"/></a>
+<a href="https://asciinema.org/a/d2al4s6UNZ5YLbs892HIqUdec?autoplay=1"><img src="https://asciinema.org/a/d2al4s6UNZ5YLbs892HIqUdec.png" width="700"/></a>
+<script src=""https://asciinema.org/a/d2al4s6UNZ5YLbs892HIqUdec.js" id="asciicast-14" async></script>
 
 <a href="https://asciinema.org/a/nxxSneVxBnSuK6zDLBBh4Dhyp"><img src="https://asciinema.org/a/nxxSneVxBnSuK6zDLBBh4Dhyp.png" width="700"/></a>
