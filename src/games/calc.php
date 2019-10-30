@@ -1,4 +1,5 @@
 <?php
+
 namespace BrainGames\Calc;
 
 use function BrainGames\Core\run;
@@ -6,9 +7,9 @@ use function BrainGames\Core\run;
 function calc()
 {
     $rule = 'What is the result of the expression?';
-    $game = function() {
+    $game = function () {
         $num1 = rand(1, 100);
-        $num2 = rand(1, 10);    
+        $num2 = rand(1, 10);
         $operators = ['+', '-', '*'];
         $randOpearator = $operators[rand(0, count($operators) - 1)];
         $question = "Question: {$num1} {$randOpearator} {$num2}";
@@ -35,5 +36,3 @@ function calc()
     }
     run($game, $rule);
 }
-
-
