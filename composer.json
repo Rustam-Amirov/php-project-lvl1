@@ -3,9 +3,10 @@
     "description": "hexlet-project",
     "autoload": {
             "files":[
-                "src/cli.php",
-                "src/even.php",
-                "src/test.php"
+                "src/games/cli.php",
+                "src/games/even.php",
+                "src/games/calc.php",
+                "src/core.php"
             ]
     },
     "type": "training-project",
@@ -21,9 +22,9 @@
         "phpcs": "phpcs"
     },
     "bin" : ["bin/brain-games",
-             "bin/brain-even"
+             "bin/brain-even",
+             "bin/brain-calc"
     ],
-
     "require-dev": {
         "wp-cli/php-cli-tools": "^0.11.11",
         "squizlabs/php_codesniffer": "^3.0@dev"
