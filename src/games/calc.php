@@ -11,7 +11,7 @@ function calc()
         $firstNum = rand(1, 100);
         $secondNum = rand(1, 10);
         $operators = ['+', '-', '*'];
-        $randOpearator = $operators[rand(0, count($operators) - 1)];
+        $randOpearator = $operators[rand(0, 2)];
         $question = "Question: {$firstNum} {$randOpearator} {$secondNum}";
         $correctAnswer = calculationCorrectAnswer($randOpearator, $firstNum, $secondNum);
         return [
