@@ -3,7 +3,7 @@
     "description": "hexlet-project",
     "autoload": {
             "files":[
-                "src/games/cli.php",
+                "src/games/gcd.php",
                 "src/games/even.php",
                 "src/games/calc.php",
                 "src/core.php"
@@ -21,7 +21,7 @@
     "scripts": {
         "phpcs": "phpcs"
     },
-    "bin" : ["bin/brain-games",
+    "bin" : ["bin/brain-gcd",
              "bin/brain-even",
              "bin/brain-calc"
     ],
