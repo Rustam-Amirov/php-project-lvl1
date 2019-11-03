@@ -2,10 +2,13 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/5b9de7079ec18df5ce61/maintainability)](https://codeclimate.com/github/Rustam-Amirov/php-project-lvl1/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/5b9de7079ec18df5ce61/test_coverage)](https://codeclimate.com/github/Rustam-Amirov/php-project-lvl1/test_coverage)
 
+<h1>Brain-games</h1>
+Это учебный проект на в котором реализованы 5 игр запускаемых через консоль
 <p>You can use Composer to install this application.</p>
 
-<a href="https://asciinema.org/a/d2al4s6UNZ5YLbs892HIqUdec?autoplay=1"><img src="https://asciinema.org/a/d2al4s6UNZ5YLbs892HIqUdec.png" width="700"/></a>
-
+<a href="https://asciinema.org/a/ZaerGWfUotcaDuvtUZzUpdff2?autoplay=1"><img src="https://asciinema.org/a/ZaerGWfUotcaDuvtUZzUpdff2
+.png" width="700"/></a>
+<h2>Game examples</h2>
 <p>This is an example of a game in which a random arithmetic progression is created and a random number is hidden in it that needs to be guessed.</p>
 
 <a href="https://asciinema.org/a/ZCtnDzJqHH9ValrEIIII7PRT7?autoplay=1"><img src="https://asciinema.org/a/ZCtnDzJqHH9ValrEIIII7PRT7.png" width="700"/></a>
