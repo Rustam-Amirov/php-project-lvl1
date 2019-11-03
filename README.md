@@ -6,6 +6,10 @@
 
 <a href="https://asciinema.org/a/d2al4s6UNZ5YLbs892HIqUdec?autoplay=1"><img src="https://asciinema.org/a/d2al4s6UNZ5YLbs892HIqUdec.png" width="700"/></a>
 
+<p>This is an example of a game in which a random arithmetic progression is created and a random number is hidden in it that needs to be guessed.</p>
+
+<a href="https://asciinema.org/a/ZCtnDzJqHH9ValrEIIII7PRT7?autoplay=1"><img src="https://asciinema.org/a/ZCtnDzJqHH9ValrEIIII7PRT7.png" width="700"/></a>
+
 <p>Example of a game that checks whether the user answered the question correctly: Is the number even?</p>
 
 <a href="https://asciinema.org/a/hekscqYO2xsHnTDXZGoSOarBT?autoplay=1"><img src="https://asciinema.org/a/hekscqYO2xsHnTDXZGoSOarBT.png" width="700"/></a>
@@ -17,3 +21,5 @@
 <p>An example of a game in which the user must calculate and enter the largest common divisor of these numbers.</p>
 
 <a href="https://asciinema.org/a/uVxUcUasiTjJ0PbCsEbNOjyq6?autoplay=1"><img src="https://asciinema.org/a/uVxUcUasiTjJ0PbCsEbNOjyq6.png" width="700"/></a>
+
+
