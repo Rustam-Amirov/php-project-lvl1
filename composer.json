@@ -1,6 +1,13 @@
 {
     "name": "rustam/php-project1",
     "description": "hexlet-project",
+    "keywords": [
+                "brain-even",
+                "brain-calc",
+                "brain-gcd",
+                "brain-progression",
+                "brain-prime"
+    ],
     "autoload": {
             "files":[
                 "src/games/gcd.php",
