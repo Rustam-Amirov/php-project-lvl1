@@ -6,8 +6,7 @@
 Это учебный проект на в котором реализованы 5 игр запускаемых через консоль
 <p>You can use Composer to install this application.</p>
 
-<a href="https://asciinema.org/a/ZaerGWfUotcaDuvtUZzUpdff2?autoplay=1"><img src="https://asciinema.org/a/ZaerGWfUotcaDuvtUZzUpdff2
-.png" width="700"/></a>
+<a href="https://asciinema.org/a/ZaerGWfUotcaDuvtUZzUpdff2?autoplay=1"><img src="https://asciinema.org/a/ZaerGWfUotcaDuvtUZzUpdff2.png" width="700"/></a>
 <h2>Game examples</h2>
 <p>This is an example of a game in which a random arithmetic progression is created and a random number is hidden in it that needs to be guessed.</p>
 
