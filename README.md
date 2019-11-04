@@ -26,6 +26,5 @@
 
 <p>example of a game in which a random number appears and you need to determine if it is simple or not</p>
 
-<a href=" https://asciinema.org/a/kRHEfuWEkLS6WGmVv8mY6SjVY?autoplay=1"><img src= "https://asciinema.org/a/kRHEfuWEkLS6WGmVv8mY6SjVY.png
-" width="700"/></a>
+<a href=" https://asciinema.org/a/kRHEfuWEkLS6WGmVv8mY6SjVY?autoplay=1"><img src= "https://asciinema.org/a/kRHEfuWEkLS6WGmVv8mY6SjVY.png" width="700"/></a>
 
