@@ -15,7 +15,7 @@ function run($getGame, $rule)
     $replaysOfGame = 3;
 
     for ($replaysOfGame = 3; $replaysOfGame > 0; $replaysOfGame--) {
-        ['question'=> $question, 'correctAnswer' => $correctAnswer] = $getGame();
+        ['question' => $question, 'correctAnswer' => $correctAnswer] = $getGame();
         line("Question: {$question}");
         $userAnswer = prompt('Your answer');
         if ($userAnswer != $correctAnswer) {
