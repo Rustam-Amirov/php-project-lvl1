@@ -1,39 +1,40 @@
 <?php
 
-namespace BrainGames\Calc;
+namespace BrainGames\Games\Calc;
 
 use function BrainGames\Core\run;
 
+const GAME_RULE = 'What is the result of the expression?';
+
 function calc()
 {
-    $rule = 'What is the result of the expression?';
-    $game = function () {
-        $firstNum = rand(1, 100);
-        $secondNum = rand(1, 10);
+    $getGame = function () {
+        $first = rand(1, 100);
+        $second = rand(1, 10);
         $operators = ['+', '-', '*'];
         $randOpearator = $operators[rand(0, 2)];
-        $question = "Question: {$firstNum} {$randOpearator} {$secondNum}";
-        $correctAnswer = calculationCorrectAnswer($randOpearator, $firstNum, $secondNum);
+        $question = "{$first} {$randOpearator} {$second}";
+        $correctAnswer = calculationCorrectAnswer($randOpearator, $first, $second);
         return [
             'question' => $question,
             'correctAnswer' => $correctAnswer
         ];
     };
-    run($game, $rule);
+    run($getGame, GAME_RULE);
 }
 
-function calculationCorrectAnswer($randOpearator, $firstNum, $secondNum)
+function calculationCorrectAnswer($randOpearator, $first, $second)
 {
         
     switch ($randOpearator) {
         case '+':
-            return $firstNum + $secondNum;
+            return $first + $second;
             break;
         case '-':
-            return $firstNum - $secondNum;
+            return $first - $second;
             break;
         case '*':
-            return $firstNum * $secondNum;
+            return $first * $second;
             break;
     }
 }

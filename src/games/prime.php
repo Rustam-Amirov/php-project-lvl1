@@ -1,22 +1,23 @@
 <?php
 
-namespace BrainGames\Prime;
+namespace BrainGames\Games\Prime;
 
 use function BrainGames\Core\run;
 
+const GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 function prime()
 {
-    $rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-    $game = function () {
+    $getGame = function () {
         $num = rand(0, 100);
-        $question = "Question: {$num}";
+        $question = "{$num}";
         $correctAnswer = isPrime($num);
         return [
             'question' => $question,
             'correctAnswer' => $correctAnswer
         ];
     };
-    run($game, $rule);
+    run($getGame, GAME_RULE);
 }
 
 function isPrime($num)

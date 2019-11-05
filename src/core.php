@@ -6,24 +6,24 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Calc\calc;
 
-function run($game, $rule)
+function run($getGame, $rule)
 {
     line('Welcome to Brain Games!');
     line($rule);
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    
+    $replaysOfGame = 3;
 
-    for ($repeate = 3; $repeate > 0; $repeate--) {
-        $array = $game();
-        line($array['question']);
+    for ($replaysOfGame = 3; $replaysOfGame > 0; $replaysOfGame--) {
+        ['question'=> $question, 'correctAnswer' => $correctAnswer] = $getGame();
+        line("Question: {$question}");
         $userAnswer = prompt('Your answer');
-        $correctAnswer = $array['correctAnswer'];
-        if ($userAnswer == $correctAnswer) {
-            line("Correct!");
-        } else {
+        if ($userAnswer != $correctAnswer) {
             line("%s is wrong answer ;(. Correct answer was %s.", $userAnswer, $correctAnswer);
-            return line("Let's try again, %s!", $name);
+            line("Let's try again, %s!", $name);
+            return;
+        } else {
+            line("Correct!");
         }
     }
     line("Congratulations, %s!", $name);

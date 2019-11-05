@@ -1,23 +1,24 @@
 <?php
 
-namespace BrainGames\Gcd;
+namespace BrainGames\Games\Gcd;
 
 use function BrainGames\Core\run;
 
+const GAME_RULE = 'Find the greatest common divisor of given numbers.';
+
 function gcd()
 {
-    $rule = 'Find the greatest common divisor of given numbers.';
-    $game = function () {
+    $getGame = function () {
         $firstNum = rand(1, 100);
         $secondNum = rand(1, 100);
-        $question = "Question: {$firstNum} {$secondNum}";
+        $question = "{$firstNum} {$secondNum}";
         $correctAnswer = calculationCorrectAnswer($firstNum, $secondNum);
         return [
             'question' => $question,
             'correctAnswer' => $correctAnswer
         ];
     };
-    run($game, $rule);
+    run($getGame, GAME_RULE);
 }
 
 function calculationCorrectAnswer($firstNum, $secondNum)
