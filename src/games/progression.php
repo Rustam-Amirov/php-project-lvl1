@@ -5,10 +5,10 @@ namespace BrainGames\Games\Progression;
 use function BrainGames\Core\run;
 
 const GAME_RULE = 'What number is missing in the progression?';
-
+const PROGRESSION_LENGTH = 10;
 function progression()
 {
-    $getGame = function () {
+    $getGameData = function () {
         $progression = makeProgression();
         $randomNum = rand(0, 9);
         $correctAnswer = $progression[$randomNum];
@@ -20,7 +20,7 @@ function progression()
             'correctAnswer' => $correctAnswer
         ];
     };
-    run($getGame, GAME_RULE);
+    run($getGameData, GAME_RULE);
 }
 function makeProgression()
 {
@@ -30,7 +30,7 @@ function makeProgression()
     $makeProgress = function ($progression, $next) use (&$makeProgress, $interval) {
         $next = $next + $interval;
         $progression[] = $next;
-        if (sizeof($progression) == 10) {
+        if (sizeof($progression) == PROGRESSION_LENGTH) {
             return $progression;
         } else {
             return $makeProgress($progression, $next);

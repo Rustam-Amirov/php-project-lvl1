@@ -5,22 +5,21 @@ namespace BrainGames\Games\Calc;
 use function BrainGames\Core\run;
 
 const GAME_RULE = 'What is the result of the expression?';
-
+const OPERATORS = ['+', '-', '*'];
 function calc()
 {
-    $getGame = function () {
+    $getGameData = function () {
         $first = rand(1, 100);
         $second = rand(1, 10);
-        $operators = ['+', '-', '*'];
-        $randOpearator = $operators[rand(0, 2)];
-        $question = "{$first} {$randOpearator} {$second}";
+        $randOpearator = OPERATORS[rand(0, sizeof(OPERATORS) - 1)];
+        $question = $first . ' ' . $randOpearator . ' ' .  $second;
         $correctAnswer = calculationCorrectAnswer($randOpearator, $first, $second);
         return [
             'question' => $question,
             'correctAnswer' => $correctAnswer
         ];
     };
-    run($getGame, GAME_RULE);
+    run($getGameData, GAME_RULE);
 }
 
 function calculationCorrectAnswer($randOpearator, $first, $second)

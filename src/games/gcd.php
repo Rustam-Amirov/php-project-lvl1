@@ -8,26 +8,26 @@ const GAME_RULE = 'Find the greatest common divisor of given numbers.';
 
 function gcd()
 {
-    $getGame = function () {
-        $firstNum = rand(1, 100);
-        $secondNum = rand(1, 100);
-        $question = "{$firstNum} {$secondNum}";
-        $correctAnswer = calculationCorrectAnswer($firstNum, $secondNum);
+    $getGameData = function () {
+        $first = rand(1, 100);
+        $second = rand(1, 100);
+        $question = $first . ' ' . $second;
+        $correctAnswer = calculationGsd($first, $second);
         return [
             'question' => $question,
             'correctAnswer' => $correctAnswer
         ];
     };
-    run($getGame, GAME_RULE);
+    run($getGameData, GAME_RULE);
 }
 
-function calculationCorrectAnswer($firstNum, $secondNum)
+function calculationGsd($first, $second)
 {
-    $correctAnswer = 1;
-    for ($i = 2; $i <= $firstNum; $i++) {
-        if ($firstNum % $i == 0 && $secondNum % $i == 0) {
-            $correctAnswer = $i;
+    $gsd = 1;
+    for ($i = 2; $i <= $first; $i++) {
+        if ($first % $i == 0 && $second % $i == 0) {
+            $gsd = $i;
         }
     }
-    return $correctAnswer;
+    return $gsd;
 }
