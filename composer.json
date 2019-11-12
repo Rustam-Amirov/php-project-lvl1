@@ -10,12 +10,12 @@
     ],
     "autoload": {
             "files":[
-        "src/games/gcd.php",
-        "src/games/even.php",
-        "src/games/calc.php",
-        "src/games/progression.php",
-        "src/games/prime.php",
-        "src/core.php"
+        "src/Games/Gcd.php",
+        "src/Games/Even.php",
+        "src/Games/Calc.php",
+        "src/Games/Progression.php",
+        "src/Games/Prime.php",
+        "src/Core.php"
             ]
     },
     "type": "training-project",

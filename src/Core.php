@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Calc\calc;
 
-const REPLAYOFGAME = 3;
+const REPLAY_OF_GAMES_COUNT = 3;
 
 function run($getGameData, $rule)
 {
@@ -15,7 +15,7 @@ function run($getGameData, $rule)
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
 
-    for ($i = 0; $i < REPLAYOFGAME; $i++) {
+    for ($i = 0; $i < REPLAY_OF_GAMES_COUNT; $i++) {
         ['question' => $question, 'correctAnswer' => $correctAnswer] = $getGameData();
         line("Question: {$question}");
         $userAnswer = prompt('Your answer');

@@ -11,8 +11,9 @@ function calc()
     $getGameData = function () {
         $first = rand(1, 100);
         $second = rand(1, 10);
-        $randOpearator = OPERATORS[rand(0, sizeof(OPERATORS) - 1)];
-        $question = $first . ' ' . $randOpearator . ' ' .  $second;
+        $indexRandOpearator = array_rand(OPERATORS);
+        $randOpearator = OPERATORS[$indexRandOpearator];
+        $question = "{$first} {$randOpearator} {$second}";
         $correctAnswer = calculationCorrectAnswer($randOpearator, $first, $second);
         return [
             'question' => $question,

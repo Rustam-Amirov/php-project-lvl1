@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/Rustam-Amirov/php-project-lvl1.svg?branch=master)](https://travis-ci.org/Rustam-Amirov/php-project-lvl1)
 [![Maintainability](https://api.codeclimate.com/v1/badges/5b9de7079ec18df5ce61/maintainability)](https://codeclimate.com/github/Rustam-Amirov/php-project-lvl1/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/5b9de7079ec18df5ce61/test_coverage)](https://codeclimate.com/github/Rustam-Amirov/php-project-lvl1/test_coverage)
 
 <h1>Brain-games</h1>
 Это учебный проект на в котором реализованы 5 игр запускаемых через консоль

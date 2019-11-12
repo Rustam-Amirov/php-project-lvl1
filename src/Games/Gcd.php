@@ -12,7 +12,7 @@ function gcd()
         $first = rand(1, 100);
         $second = rand(1, 100);
         $question = $first . ' ' . $second;
-        $correctAnswer = calculationGsd($first, $second);
+        $correctAnswer = calculationGcd($first, $second);
         return [
             'question' => $question,
             'correctAnswer' => $correctAnswer
@@ -21,7 +21,7 @@ function gcd()
     run($getGameData, GAME_RULE);
 }
 
-function calculationGsd($first, $second)
+function calculationGcd($first, $second)
 {
     $gsd = 1;
     for ($i = 2; $i <= $first; $i++) {

@@ -10,13 +10,12 @@ function progression()
 {
     $getGameData = function () {
         $progression = makeProgression();
-        $randomNum = rand(0, 9);
-        $correctAnswer = $progression[$randomNum];
-        $progression[$randomNum] = '..';
+        $hiddenIndexNumberInProgression = rand(0, PROGRESSION_LENGTH - 1);
+        $correctAnswer = $progression[$hiddenIndexNumberInProgression];
+        $progression[$hiddenIndexNumberInProgression] = '..';
         $stringProgression = implode(' ', $progression);
-        $question = "{$stringProgression}";
         return [
-            'question' => $question,
+            'question' => $stringProgression,
             'correctAnswer' => $correctAnswer
         ];
     };
@@ -24,17 +23,17 @@ function progression()
 }
 function makeProgression()
 {
-    $next = rand(1, 100);
+    $start = rand(1, 100);
     $progression = [];
     $interval = rand(1, 10);
-    $makeProgress = function ($progression, $next) use (&$makeProgress, $interval) {
-        $next = $next + $interval;
-        $progression[] = $next;
+    $makeProgress = function ($progression, $start) use (&$makeProgress, $interval) {
+        $nextNumberInProgression = $start + $interval;
+        $progression[] = $nextNumberInProgression;
         if (sizeof($progression) == PROGRESSION_LENGTH) {
             return $progression;
         } else {
-            return $makeProgress($progression, $next);
+            return $makeProgress($progression, $nextNumberInProgression);
         }
     };
-    return $makeProgress($progression, $next);
+    return $makeProgress($progression, $start);
 }

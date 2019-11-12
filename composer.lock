@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dc07dd089de3a80fafc319293a16f6de",
+    "content-hash": "f95f4a7cd6a5a93de18c1540476cb79d",
     "packages": [],
     "packages-dev": [
         {
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "65b12cdeaaa6cd276d4c3033a95b9b88b12701e7"
+                "reference": "5624bed6f1e737df5bfa8946fab46bf92087d2d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/65b12cdeaaa6cd276d4c3033a95b9b88b12701e7",
-                "reference": "65b12cdeaaa6cd276d4c3033a95b9b88b12701e7",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/5624bed6f1e737df5bfa8946fab46bf92087d2d4",
+                "reference": "5624bed6f1e737df5bfa8946fab46bf92087d2d4",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-10-28T04:36:32+00:00"
+            "time": "2019-11-12T02:22:38+00:00"
         },
         {
             "name": "wp-cli/php-cli-tools",
@@ -110,7 +110,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "squizlabs/php_codesniffer": 20
     },
