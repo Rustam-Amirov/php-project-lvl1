@@ -9,7 +9,9 @@ const PROGRESSION_LENGTH = 10;
 function progression()
 {
     $getGameData = function () {
-        $progression = makeProgression();
+        $start = rand(1, 100);
+        $interval = rand(1, 10);
+        $progression = makeProgression($start, $interval);
         $hiddenIndexNumberInProgression = rand(0, PROGRESSION_LENGTH - 1);
         $correctAnswer = $progression[$hiddenIndexNumberInProgression];
         $progression[$hiddenIndexNumberInProgression] = '..';
@@ -21,19 +23,12 @@ function progression()
     };
     run($getGameData, GAME_RULE);
 }
-function makeProgression()
+
+function makeProgression($start, $interval)
 {
-    $start = rand(1, 100);
     $progression = [];
-    $interval = rand(1, 10);
-    $makeProgress = function ($progression, $start) use (&$makeProgress, $interval) {
-        $nextNumberInProgression = $start + $interval;
-        $progression[] = $nextNumberInProgression;
-        if (sizeof($progression) == PROGRESSION_LENGTH) {
-            return $progression;
-        } else {
-            return $makeProgress($progression, $nextNumberInProgression);
-        }
-    };
-    return $makeProgress($progression, $start);
+    for ($i = 0; $i < PROGRESSION_LENGTH; $i++) {
+        $progression[] = $start + $interval * $i;
+    }
+    return $progression;
 }
